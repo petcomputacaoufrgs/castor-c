@@ -30,13 +30,13 @@
         {
             "type": "cppbuild",
             "label": "gcc build active file windows",
-            "command": "..\\compiladores\\windows\\w64devkit\\bin\\gcc.exe",
+            "command": "gcc",
             "args": [
                 "-Wall",
                 "-fanalyzer",
                 "-fdiagnostics-color=always",
                 "-g",
-                "${fileDirname}\\*.c",
+                "${fileDirname}/*.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.exe",
                 "-lm",
